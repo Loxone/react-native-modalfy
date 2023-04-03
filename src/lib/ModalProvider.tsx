@@ -124,13 +124,13 @@ const ModalProvider = ({ children, stack }: Props) => {
       document.body.style.overscrollBehavior = 'none'
     }
 
-    return () => {
-      if (Platform.OS === 'web') {
-        document.body.style.touchAction = 'auto'
-        document.body.style.overflow = 'auto'
-        document.body.style.overscrollBehavior = 'auto'
-      }
-    }
+    //return () => {
+    //  if (Platform.OS === 'web') {
+    //    document.body.style.touchAction = 'auto'
+    //    document.body.style.overflow = 'auto'
+    //    document.body.style.overscrollBehavior = 'auto'
+    //  }
+    //}
   }, [contextValue.stack.openedItemsSize])
 
   return (
